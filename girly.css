@@ -1,0 +1,123 @@
+/* ===== BASE ===== */
+body {
+    background: linear-gradient(135deg, #fde2f3, #fce7ff);
+    font-family: "Poppins", sans-serif;
+}
+
+/* subir todo */
+.block-container {
+    padding-top: 1.5rem !important;
+}
+
+/* ===== LOGIN ===== */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+}
+
+.login-card {
+    background: rgba(255,255,255,0.92);
+    border-radius: 26px;
+    padding: 2.8rem;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(180,120,200,0.35);
+}
+
+.login-card h1 {
+    color: #a855f7;
+    font-size: 2.2rem;
+}
+
+.login-card p {
+    color: #9f7aea;
+    margin-bottom: 1.4rem;
+}
+
+/* ===== INPUTS ===== */
+input, select {
+    border-radius: 14px !important;
+    border: 1px solid #f3c4e9 !important;
+    background: #fff !important;
+}
+
+/* ===== BOTONES ===== */
+button {
+    border-radius: 18px !important;
+    background: linear-gradient(135deg, #d946ef, #a855f7) !important;
+    color: white !important;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+/* ===== CHECK ===== */
+button[key^="done_"] {
+    background: linear-gradient(135deg, #f472b6, #a855f7) !important;
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+}
+
+button[key^="done_"]:hover {
+    transform: scale(1.25);
+    box-shadow: 0 4px 14px rgba(180,100,200,0.4);
+}
+
+/* ===== AGREGAR TAREA ===== */
+.agregar-tarea-wrapper {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    padding: 0.35rem 0.6rem;
+    margin-bottom: 0.6rem;
+    box-shadow: 0 6px 15px rgba(180,120,200,0.15);
+}
+
+.agregar-tarea-wrapper input,
+.agregar-tarea-wrapper select {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.4rem !important;
+    height: 32px !important;
+}
+
+.agregar-tarea-wrapper button {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+}
+
+/* ===== TAREAS ===== */
+.tarea {
+    background: white;
+    border-radius: 18px;
+    padding: 0.7rem;
+    margin-bottom: 0.55rem;
+    box-shadow: 0 10px 25px rgba(180,120,200,0.25);
+    font-size: 0.85rem;
+}
+
+/* colores por categoría */
+.reunión { border-left: 5px solid #f472b6; }
+.planillas { border-left: 5px solid #60a5fa; }
+.casos { border-left: 5px solid #34d399; }
+.pendientes { border-left: 5px solid #facc15; }
+
+/* ===== OTROS ===== */
+.contador {
+    font-size: 0.8rem;
+    color: #a855f7;
+    margin-bottom: 0.4rem;
+}
+
+.vacio {
+    color: #b983d6;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* sidebar */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #ffd6ea, #e7c6ff);
+}
